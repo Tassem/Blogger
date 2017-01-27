@@ -1,0 +1,147 @@
+.tabs2 {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	border: 1px solid #e0e0e0;
+	border-bottom: none;
+	height: 54px;
+	width: 99%;
+	background-color: #fff;
+	position: relative;
+	z-index: 4;
+}
+
+
+.tabs2 li {
+	margin: 0;
+	text-align: center;
+	padding:0px 0.6%
+}
+.tabs2 li a {
+	float: right;
+	color: #454545;
+	height: 50px;
+	padding: 0px 10px;
+	font-weight: 600;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 14px;
+	background-color: #fff;
+	border-right: 1px solid #e0e0e0;
+	border-top: 4px solid #fff;
+	min-width:200px
+
+}
+.tabs2 li a:hover {
+	color: #f6921c;
+}
+.tabs2 li.active a {
+	color: #FFF;
+	border-top: 4px solid #f6921c;
+	border-bottom: 1px solid #fff;
+	background:#ff6e41
+	
+}
+.tabs-content2 {
+	float: left;
+	width: 91%;
+	padding: 1% 4% 1% 4%;
+	text-align: right;
+	margin-bottom: 40px;
+	margin-top: -1px;
+	border: 1px solid #e0e0e0;
+	background-color: #003e75;
+	position: relative;
+	z-index: 3;
+	color:#FFF
+
+}
+.tabs-content3 img.img_left2 {
+	width: auto;
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+.tabs-content3 .tabs-panel {
+	padding: 20px;
+}
+.tabs-content3 .tabs-panel3 .tab-title3 {
+	display: none;
+}
+
+.tabs2.two li a {
+	padding: 0px 20px;
+}
+
+
+/*	#Themes
+//	================================================== */
+
+#example-2 .tabs2 li {
+width: 100px;
+border: 1px solid #DDD;
+border-right: 0;
+	background-color: #003e75;
+cursor: pointer;
+position: relative;
+z-index: 999;
+}
+#example-2 .tabs2 li:last-child {
+border-right: 1px solid #DDD;
+}
+#example-2 .tabs2 li.active {
+border-bottom: 1px solid #FFF;
+	background-color: #003e75;
+}
+#example-2 .tabs-content2 {
+border: 1px solid #DDD;
+	background-color: #003e75;
+position: relative;
+top: -1px;
+z-index: 99;
+}
+#example-2 .tabs-content3 .tab-title {
+color: #0b8593;
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1169px){
+
+.tabs2 li a {
+	padding: 0px 20px;
+}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+.tabs2 li a {
+	padding: 0px 10px;
+}
+
+.tabs2.two li a {
+	padding: 0px 10px;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.tabs2 li a {
+	padding: 0px 10px;
+}
+
+}
+
+
+@media only screen and (max-width: 479px){
+.tabs2 li a {
+	padding: 0px 5px;
+}
+
+
+	
+}
+

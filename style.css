@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ##### EFFECT ##### */
+.item_top {
+	top: -50px;
+	padding-right: 0px;
+	opacity: 0;
+	position: relative;
+}
+.item_bottom {
+	bottom: -50px;
+	padding-left: 0px;
+	opacity: 0;
+	position: relative;
+}
+.item_left {
+	left: -80px;
+	padding-right: 0px;
+	opacity: 0;
+	position: relative;
+}
+.item_right {
+	right: -80px;
+	padding-left: 0px;
+	opacity: 0;
+	position: relative;
+}
+.features_sec7 .readmore_but2.item_left, .features_sec23 .readmore_but2.item_left
+{
+	padding-right:40px;	
+}

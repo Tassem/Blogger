@@ -1,0 +1,21 @@
+/*
+* @package Elos
+* @copyright (C) 2014 by mojoomla.com - All rights reserved!
+* @license GNU General Public License, version 2 (http://www.gnu.org/licenses/gpl-2.0.html)
+* @author mojoomla.com <sales@mojoomla.com>
+*/
+
+/*** home page condition css ****/
+
+.content_fullwidth 
+{  
+    padding: 0;
+}
+.page_title2
+ {
+  display:none;
+ }
+.page_title
+ {
+  display:none;
+ }
