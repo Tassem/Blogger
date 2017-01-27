@@ -1,0 +1,294 @@
+/**
+ * IceMegaMenu Extension for Joomla 3.0 By IceTheme
+ * 
+ * 
+ * @copyright	Copyright (C) 2013 IceTheme.com. All rights reserved.
+ * @license		GNU General Public License version 2
+ * 
+ * @Website 	http://www.icetheme.com/Joomla-Extensions/icemegamenu.html
+ *
+ 
+ Clean Theme
+ added on 29 April 2013
+ 
+ */
+ @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+ 
+ /* OpenSans Font emmbed */
+@font-face {
+   font-family: 'Droid Arabic Kufi', serif;
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+ 
+ 
+/* clear some styles */
+.icemegamenu ul, 
+.icemegamenu li {
+	list-style-type:none;
+	padding:0;
+
+	margin-top:} 
+	
+ .collapse {
+  overflow: visible;}
+  
+  
+/* begin mainmenu */ 
+.icemegamenu > ul {
+	position: relative;
+	margin:0;
+	padding:0;
+	z-index: 999;
+	clear: both;
+	width: 100%;
+	margin-left:40px;}
+	
+	.icemegamenu > ul > li {
+		position: relative;
+		display: block;
+		float: right;
+	}
+		
+		.icemegamenu > ul > li  a.iceMenuTitle {
+			font-family: 'Droid Arabic Kufi', serif;
+			position: relative;
+			z-index: 9999;
+			display: block;
+			line-height: 20px;
+			font-size: 15px;
+			text-transform:uppercase;
+			color: #454545;
+			font-weight:500;
+			text-decoration:none;
+			text-shadow: 1px 1px 1px #fff;
+			-webkit-transition: all .25s ease-out;
+			-moz-transition: all .25s ease-out;
+			-ms-transition: all .25s ease-out;
+			-o-transition: all .25s ease-out;
+			transition: all .25s ease-out;
+			}
+			
+			/*.icemegamenu > ul > li:hover > a {
+				background-color:#DEDEDE;}*/
+			
+			.icemegamenu ul > li  a.iceMenuTitle:hover,
+			.icemegamenu ul > li:hover > a.iceMenuTitle,
+			ul.icesubMenu li.active a.iceMenuTitle  { 
+				color: #FC4242; }
+				
+			div.icemegamenu ul#icemegamenu  li.active a.icemega_active > span.icemega_title { 
+				color: #FC4242; }		
+				
+			/* subtitles */
+			.icemegamenu > ul > li span.icemega_desc {
+				display:block;
+				font-size:12px;
+				font-family: 'Droid Arabic Kufi', serif;
+				padding:0;
+				line-height:1.25em;
+				color:#999!important;
+				margin-bottom: 7px;
+		
+				text-shadow:none!important}
+
+ 				/* when dont have subtitle */
+				.icemegamenu > ul > li >  a.iceMenuTitle > span.icemega_nosubtitle {
+					padding:15px;
+					display:block}
+					
+					
+				/* when is current */	
+				/*.icemegamenu > ul > li.active > a {
+					background-color:#DEDEDE}*/
+					
+					
+			
+						
+
+ /* Submenu */
+ul.icesubMenu {
+    position: absolute;
+	margin:0;
+    top: 80px;
+    left: 0;
+	visibility:visible;
+	max-height:0;
+	overflow:hidden;
+    opacity: 0;
+    background: #eee;
+    border: 1px solid #DEDEDE;
+	border-top:none;
+    border-radius: 3px;
+	-webkit-transition: all .25s ease-out;
+	-moz-transition: all .25s ease-out;
+	-ms-transition: all .25s ease-out;
+	-o-transition: all .25s ease-out;
+	transition: all .25s ease-out;}
+	
+			
+		#icemegamenu > li:hover > ul.icesubMenu {
+			opacity: 1;
+			max-height:1000px;
+			overflow:visible;
+			top: 50px;
+			 border-top: 2px solid #FC4242;
+			 }
+			
+			ul.icesubMenu ul > li {
+				position:relative;}
+				
+				ul.icesubMenu > li a.iceMenuTitle {
+					
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #E0E0E0;
+    clear: both;
+    color: #333333;
+    display: block;
+    font-weight: normal;
+    line-height: 30px;
+    padding:6px 15px;
+
+	width:130px;
+
+
+
+					}
+	 
+	 
+				/* when is parent */
+				ul.icesubMenu li.parent {
+					}
+					
+				/* hover and active */
+				/*ul.icesubMenu ul > li:hover > a,
+				ul.icesubMenu ul > li.active > a  {
+					background-color:#DEDEDE;}*/
+					
+				
+				
+ 
+/* Second Level Dropdown */
+ul.sub_level_2,
+ul.sub_level_3,
+ul.sub_level_4,
+ul.sub_level_5 {
+	top: 1px;
+	left: -100%;
+	margin-left:15px;
+
+	box-shadow:none;
+	border:1px solid #DEDEDE;}
+	
+	
+	ul.icesubMenu ul > li:hover > ul {
+		opacity: 1;
+		max-height:1000px;
+		overflow:visible;
+		visibility:visible;
+		margin-left:0px;}
+	
+ 
+ 
+ 
+/* Modules inside dropdown */
+.icesubMenu .icemega_cover_module 
+{
+     background-color: #FFFFFF;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    padding: 15px 5px;
+	float:right;
+	}
+
+	.icesubMenu .icemega_cover_module span.iceModuleTile {
+		color:#555;
+		font-size:18px;
+		text-shadow:1px 1px 1px #fff;
+		margin-bottom:6px;
+		display:block;}
+
+	.icesubMenu .icemega_cover_module a {}
+
+
+
+/* for the respponsive part 
+there is antoher CSS file in the same folder */
+
+.ice-megamenu-toggle {
+	display:none}
+
+
+
+/* fix when there is no space for the dropdown on the right
+it will appear instead on the left */
+.ice_righttoleft{
+		left:auto!important;
+		right:0;}
+		
+/****our css ***/
+.icemodules .iceCols {
+    width: 876px!important;
+}
+
+.row.icemodules .col-sm-4 {
+	float:left;
+    width: 33.3333%;
+}
+.row.icemodules .col-sm-2 {
+	float:left;
+    width: 16.6667%;
+}
+.row.icemodules .col-sm-4, .row.icemodules .col-sm-2
+{
+ min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.icemega_modulewrap .col-sm-4 p
+{
+color: #656565;
+font-family: 'Droid Arabic Kufi', serif; 
+    font-size: 13px;
+}
+.icemega_modulewrap .col-sm-2 .title {
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 13px;
+    font-weight: 600;
+	font-style: normal;
+    line-height: 25px;
+}
+.icesubMenu.icemodules {
+    z-index: 500;
+}
+
+.icemegamenu ul > li .iceCols li.iceMenuLiLevel_2:hover a.iceMenuTitle
+{
+	background-color: #F5F5F5;
+    color: #262626;
+    text-decoration: none;
+}
+.icemega_modulewrap .list.col-sm-2 {
+    padding: 0;
+    width: 100%;
+}
+.icemega_modulewrap .list.col-sm-2 li
+{
+	line-height:30px;
+}
+.icemega_modulewrap .list.col-sm-2 li a
+{
+ color: #656565;
+    font-size: 13px;
+font-family: 'Droid Arabic Kufi', serif; 
+}
+.icemega_modulewrap .list.col-sm-2 li:hover a
+{
+ color:#727272;
+}
+
+.icemegamenu > ul > li:last-child > a.iceMenuTitle > span.icemega_nosubtitle
+{
+	padding-right:0;
+}

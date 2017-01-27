@@ -4,7 +4,7 @@
 }
 
 .clients .jcarousel-skin-tango .jcarousel-direction-rtl {
-	direction: rtl;
+
 }
 
 .clients .jcarousel-skin-tango .jcarousel-container-horizontal {
@@ -19,7 +19,7 @@
 	margin-top: 7px;
 	font-family: 'Open Sans';
 	font-weight: 600;
-	margin-left: 20px;
+	margin-left: 5px;
 }
 .clients .jcarousel-skin-tango .jcarousel-container-horizontal i {
 	font-family: 'Open Sans';
@@ -27,7 +27,7 @@
 	font-weight: 600;
 	color: #999;
 	display: block;
-	margin-left: 20px;
+	margin-left:5px;
 	margin-top: -3px;
 	font-style: normal;
 }
@@ -43,7 +43,7 @@
 }
 
 .clients .jcarousel-skin-tango .jcarousel-item {
-    width: 215px;
+    width: 200px;
     height: 50px;
 	text-align: center;
 }
@@ -66,13 +66,13 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background: transparent url(next-horizontal-two.png) no-repeat 0 0;
+    background: transparent url(../images/next-horizontal-two.png) no-repeat 0 0;
 }
 
 .clients .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
     left: 5px;
     right: auto;
-    background-image: url(prev-horizontal.png);
+    background-image: url(../images/prev-horizontal.png);
 }
 
 .clients .jcarousel-skin-tango .jcarousel-next-horizontal:hover,
@@ -99,13 +99,13 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background: transparent url(prev-horizontal-two.png) no-repeat 0 0;
+    background: transparent url(../images/prev-horizontal-two.png) no-repeat 0 0;
 }
 
 .clients .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
     left: auto;
     right: 5px;
-    background-image: url(next-horizontal.png);
+    background-image: url(../images/next-horizontal.png);
 }
 
 .clients .jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 
@@ -124,3 +124,4 @@
     cursor: default;
     background-position: -90px 0;
 }
+.jcarousel-item2{margin: 0px}
